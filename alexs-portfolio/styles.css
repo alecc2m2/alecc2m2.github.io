@@ -263,7 +263,7 @@ footer{
      margin: 0 21px;
    }
    header{
-     background-image: url("img/header-bg-sp.png");
+     background-image: url(img/header-bg-sp.png);
    }
    .header-title{
      padding-top: 35vh;
