@@ -1,0 +1,946 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ *   共通指定
+ * -------------------------------- */
+
+body, h1, h2, h3, h4, h5, h6, p, div, span, ul, li, i{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #333;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+img{
+  vertical-align: baseline;
+}
+
+a:link, a:visited, a:hover, a:active{
+  /* color: #333; */
+  text-decoration: none;
+}
+
+ul, li{
+  list-style-type: none;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.title-box{
+  padding-top: 80px;
+}
+
+.section-title{
+  font-size: 3.2rem;
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #8DB9CA;
+}
+
+.title-box::after{
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #8DB9CA;
+  margin: 12px auto 30px;
+}
+
+.btn{
+  background-color: #8DB9CA;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+/* --------------------------------
+ *   header
+ * -------------------------------- */
+
+ .header{
+   width: 100%;
+   height: 60px;
+   background-color: rgba(255, 255, 255, 0.8);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .header-wrapper{
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 15px;
+ }
+
+ .logo{
+   float: left;
+   padding-top: 10px;
+ }
+
+ .header-nav{
+   float: right;
+   font-family: "Francois One", sans-serif;
+   font-size: 0;
+ }
+
+ .header-nav li{
+   display: inline-block;
+   font-size: 1.6rem;
+   margin-right: 20px;
+ }
+
+ .header-nav li a{
+   display: inline-block;
+   padding: 19px 0;
+   color: #333;
+   /* line-height: 60px; */
+   transition: 0.5s;
+ }
+
+ .header-nav li:not(:last-child) a:hover{
+   color: #8DB9CA;
+ }
+
+ .header-nav .open{
+   padding: 0 20px;
+   border-left: 1px solid #333;
+   border-right: 1px solid #333;
+ }
+
+ .header-nav .share{
+   margin-right: 0;
+ }
+
+ .header-nav .share a{
+   cursor: auto;
+ }
+
+ .nav-icon{
+   display: none;
+   float: right;
+   margin-top: 7px;
+ }
+
+ .fa-bars{
+   font-size: 2.7rem;
+   color: #8DB9CA;
+   border: 2px solid #8DB9CA;
+   border-radius: 4px;
+   padding: 7px 10px;
+ }
+
+ .share-box{
+   display: none;
+   position: relative;
+ }
+
+ .share-box .arrow-sub-nav{
+   position: absolute;
+   top: 52px;
+   right: 16px;
+ }
+
+ .share-box .share-list{
+   background-color: #8DB9CA;
+   position: absolute;
+   top: 60px;
+   right: 5px;
+   padding: 10px 10px 4px;
+ }
+
+ .share-list li{
+   display: inline-block;
+ }
+
+ .share-list a{
+  transition: 0.5s;
+}
+
+.share-list a:hover{
+  opacity: 0.8;
+}
+
+.share-list img{
+  height: 36px;
+  width: auto;
+}
+
+ /* --------------------------------
+  *   モーダル
+  * -------------------------------- */
+
+.black-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  padding: 7px 15px 0;
+}
+
+.black-modal .share-list{
+  float: left;
+}
+
+.close-icon{
+  float: right;
+}
+
+.fa-times{
+  font-size: 2.7rem;
+  color: #8DB9CA;
+  border: 2px solid #8DB9CA;
+  border-radius: 4px;
+  padding: 7px 13px;
+}
+
+.black-nav{
+  padding: 20px 2% 0;
+}
+
+.black-nav li{
+  margin-bottom: 20px;
+}
+
+.black-nav li a{
+   font-family: AppleGothic, sans-serif;
+   color: #fff;
+   font-size: 1.6rem;
+   transition: 0.5s;
+}
+
+.black-nav li a:hover{
+  opacity: 0.7;
+}
+
+/* --------------------------------
+ *   top
+ * -------------------------------- */
+
+.top{
+  width: 100%;
+  padding-top: 60px;
+}
+
+ .slide {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	background-position: center center;
+ 	background-size: cover;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ }
+
+ /* --------------------------------
+  *   info
+  * -------------------------------- */
+
+.info{
+  width: 100%;
+  padding: 25px 5%;
+  background-color: #fff;
+}
+
+.info .title-box{
+  display: none;
+}
+
+.info-item{
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.info-item:last-child{
+  margin-bottom: 0;
+}
+
+.info-head{
+  display: inline-block;
+  font-family: "Francois One", sans-serif;
+  font-size: 1.8rem;
+  padding-right: 37px;
+  background: url('img/arrow1.png') no-repeat right center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info-text{
+  display: inline-block;
+  padding-right: 90px;
+  color: #666;
+  padding-left: 94px;
+}
+
+.info-text a{
+  margin-left: 21px;
+  color: #666;
+}
+
+.info-text a:hover{
+  text-decoration: underline;
+}
+
+.info-btn{
+  display: inline-block;
+  width: 70px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.info-item .btn img{
+  margin-left: 9px;
+}
+
+ /* --------------------------------
+  *   insta
+  * -------------------------------- */
+
+.insta{
+  background-image: url('img/insta_bg.png');
+  text-align: center;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.insta .section-title{
+  background: url('img/insta_ico.png') no-repeat left center;
+  display: inline-block;
+  padding-left: 45px;
+  color: #333;
+}
+
+.insta .hashtag{
+  color: #8DB9CA;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.insta-wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 2%;
+  width: 100%;
+}
+
+.insta-item{
+  float: left;
+  width: 25%;
+}
+
+.insta-item img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.insta-btn{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
+  border-radius: 22px;
+  line-height: 44px;
+  margin-top: 45px;
+}
+
+.insta-btn img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.insta-btn:hover img{
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+ /* --------------------------------
+  *   concept
+  * -------------------------------- */
+
+.concept{
+  color: #8DB9CA;
+  text-align: center;
+  background-color: #fff;
+}
+
+.concept-wrapper{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.concept-text{
+  line-height: 1.9;
+  padding-bottom: 80px;
+}
+
+.concept-bg1{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 30px;
+}
+
+.concept-bg2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 30px;
+}
+
+ /* --------------------------------
+  *   drink
+  * -------------------------------- */
+
+.drink{
+  background-image: url(img/insta_bg.png);
+  padding: 80px 0;
+}
+
+.drink .title-box{
+  display: none;
+}
+
+.drink-box{
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* display: flex;
+  justify-content: space-between; */
+  width: 100%;
+}
+
+.drink-item{
+  float: left;
+  /* max-width: 235px; */
+  width: 24%;
+}
+
+.drink-item:not(:last-child){
+  margin-right: 1.3%;
+}
+
+.drink-item:nth-child(odd) .drink-text{
+  background-color: #808688;
+}
+
+.drink-item:nth-child(even) .drink-text{
+  background-color: #89C6D4;
+}
+
+.drink-img{
+  background-color: #fff;
+  text-align: center;
+  height: 200px;
+  padding: 20px 0;
+}
+
+.drink-text{
+  color: #fff;
+  padding: 20px 20px 25px;
+  min-height: 240px;
+}
+
+.drink-text .drink-name{
+  font-size: 1.8rem;
+  line-height: 1.9;
+  font-family: "Francois One", sans-serif;
+  height: 80px;
+  letter-spacing: 1px;
+}
+
+.drink-text p{
+  font-size: 1.2rem;
+}
+
+ /* --------------------------------
+  *   menu
+  * -------------------------------- */
+
+.menu{
+  padding: 140px 0;
+  background-image: url('img/parallax01.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.menu-wrapper{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 15px;
+}
+
+.menu-box{
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 15px 70px;
+}
+
+.menu-box-inners{
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.menu-box-inner{
+  width: 345px;
+}
+
+.menu-box-inner.left-inner{
+  float: left;
+}
+
+.menu-box-inner.right-inner{
+  float: right;
+}
+
+.menu-item{
+  border-bottom: 1px dotted #ccc;
+  height: 89px;
+}
+
+.menu-item:first-child{
+  border-top: 1px dotted #ccc;
+}
+
+.menu-name{
+  float: left;
+  padding: 6px 0 10px;
+}
+
+.menu-name h4{
+  font-size: 1.9rem;
+  line-height: 1.9;
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 1px;
+  color: #8db9ca;
+}
+
+.menu-name p{
+  color: #757c7f;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu-price{
+  float: right;
+  font-family: "Francois One", sans-serif;
+  color: #dc688b;
+  font-size: 2rem;
+  /* padding-top: 15px; */
+  line-height: 88px;
+}
+
+.menu-btn{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 44px;
+  border-radius: 22px;
+  line-height: 44px;
+  font-size: 1.4rem;
+  margin-top: 45px;
+}
+
+.menu-btn img{
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.tabelog{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #1f0e07;
+  margin-top: 10px;
+}
+
+ /* --------------------------------
+  *   lesson
+  * -------------------------------- */
+
+.lesson{
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.lesson-bg-1{
+  position: fixed;
+  top: 50px;
+  left: -50px;
+  z-index: -8;
+}
+
+.lesson-bg-2{
+  position: fixed;
+  bottom: -5px;
+  right: -80px;
+  z-index: -9;
+}
+
+.lesson-bg-3{
+  position: fixed;
+  bottom: -30px;
+  left: 70px;
+  z-index: -10;
+}
+
+.section-title-sub{
+  color: #757c7f;
+  font-size: 2rem;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-sub::before,
+.section-title-sub::after{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background-color: #8db9ca;
+  margin: 0 12px;
+  vertical-align: middle;
+}
+
+.schedule-box{
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  box-shadow: 0 0 30px #e5e5e5;
+  display: flex;
+  width: 100%;
+}
+
+.schedule-list{
+  margin-bottom: 30px;
+}
+
+.schedule-info-box{
+  padding: 40px 60px;
+  width: 60%;
+  background-color: #fff;
+}
+
+.schedule-item{
+  border-bottom: 1px dotted #ccc;
+  padding: 15px 0;
+  position: relative;
+  max-width: 480px;
+}
+
+.schedule-item span{
+  background-color: #D2B47B;
+  width: 85px;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+}
+
+.schedule-item a{
+  padding-left: 110px;
+  color: #757c7f;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.schedule-item a:hover{
+  text-decoration: underline;
+}
+
+.schedule-btn{
+  display: block;
+  width: 85px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+
+.schedule-btn img{
+  margin-left: 15px;
+}
+
+.calender-box{
+  padding: 40px 30px 0;
+  width: 40%;
+  background-color: #8DB9CA;
+}
+
+.calender-box img{
+  max-width: 100%;
+  height: 239px;
+  margin-bottom: 10px;
+}
+
+.calender-box p{
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.cal-lesson-a{
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  border: 1px solid #fff;
+  vertical-align: -3px;
+  margin-right: 10px;
+  background-color: #D2B47B;
+}
+
+.cal-lesson-b{
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  border: 1px solid #fff;
+  vertical-align: -3px;
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: #CB8998;
+}
+
+.instructor-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.instructor-box{
+  width: 48%;
+  padding: 60px;
+  box-shadow: 0 0 30px #e5e5e5;
+  position: relative;
+  background-color: #fff;
+}
+
+.instructor-box.left-box{
+  float: left;
+}
+
+.instructor-box.right-box{
+  float: right;
+}
+
+.instructor-photo{
+  width: 270px;
+  height: 270px;
+  text-align: center;
+  background-color: #ECEAE5;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.instructor-name-box{
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 15px;
+}
+
+.left-box .instructor-name-box{
+  color: #D2B47B;
+}
+
+.right-box .instructor-name-box{
+  color: #CB8998;
+}
+
+.instructor-name{
+  float: left;
+  font-size: 2.4rem;
+}
+
+.instructor-name-sub{
+  float: right;
+  font-size: 1.4rem;
+  padding-top: 9px;
+}
+
+.instructor-text{
+  font-size: 1.2rem;
+  color: #757c7f;
+  line-height: 1.7;
+  min-height: 200px;
+}
+
+.instructor-text a{
+  text-decoration: underline;
+  color: #8db9ca;
+}
+
+.instructor-text a:hover{
+  text-decoration: none;
+  color: #8db9ca;
+}
+
+.ins-lesson-a, .ins-lesson-b{
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 1.4rem;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ins-lesson-a{
+  background-color: #D2B47B;
+}
+
+.ins-lesson-b{
+  background-color: #CB8998;
+}
+
+ /* --------------------------------
+  *   location
+  * -------------------------------- */
+
+.location{
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.map{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.map iframe{
+  max-width: 1000px;
+  height: 425px;
+}
+
+.location-text{
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #8db9ca;
+  font-size: 1.4rem;
+}
+
+.access{
+  float: left;
+}
+
+.access li{
+  list-style-type: disc;
+  margin-left: 15px;
+  line-height: 1.7;
+}
+
+.address{
+  float: right;
+  text-align: right;
+}
+
+.address p{
+  margin-bottom: 8px;
+}
+
+ /* --------------------------------
+  *   footer
+  * -------------------------------- */
+
+.footer{
+  background-color: #fff;
+}
+
+.banners{
+  padding: 38px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.banners img{
+  padding: 2px 20px;
+  vertical-align: bottom;
+}
+
+.footer-text{
+  padding: 15px 0;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.footer-text p{
+  font-size: 1rem;
+  float: left;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.footer-text img{
+  float: right;
+}
+
+/* --------------------------------
+ *   トップへ戻るボタン
+ * -------------------------------- */
+
+.pagetop{
+  position: fixed;
+  right: 40px;
+  bottom: 150px;
+  display: none;
+}
+
+.pagetop a:hover{
+  opacity: 0.6;
+}
