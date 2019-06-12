@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ *     base
+ * -------------------------------- */
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, span, ul, li, i{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  color: #333;
+  font-family: system-ui, "Helvetica Neue", "Hiragino Kaku Gothic ProN", YuGothic, "Yu Gothic", Verdana, Meiryo, sans-serif;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+a, a:link, a:hover, a:visited, a:active{
+  text-decoration: none;
+}
+
+/* --------------------------------
+ *     part
+ * -------------------------------- */
+
+ h1{
+   display: none;
+ }
+
+.heading{
+  font-family: 'Kanit', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heading::before,
+.heading::after{
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 22px;
+  /* vertical-align: 5px; */
+  margin: 0 25px;
+  -webkit-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  transform: skewX(30deg);
+}
+
+.heading::after{
+  -webkit-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+}
+
+
+/* --------------------------------
+ *     header
+ * -------------------------------- */
+
+header{
+  background: url(img/header-bg.png) no-repeat fixed center center;
+  background-size: cover;
+  height: 790px;
+  /* text-align: center; */
+  position: relative;
+  padding: 0 40px;
+}
+
+.header-title{
+  padding-top: 220px;
+  text-align: center;
+}
+
+.header-title img{
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+}
+
+header span{
+  font-family: 'Rock Salt', cursive;
+  font-size: 3.5rem;
+  color: #ddd;
+  letter-spacing: 4px;
+  position: absolute;
+  bottom: 17%;
+  right: 11%;
+}
+
+/* --------------------------------
+ *     about
+ * -------------------------------- */
+
+.about{
+  padding: 80px 40px;
+  text-align: center;
+  background: linear-gradient(-45deg, #4D636A, #DCC7B1);
+  color: #fff;
+}
+
+.about .heading::before,
+.about .heading::after{
+  background-color: #fff;
+}
+
+.about img{
+  display: block;
+  border-radius: 50%;
+  width: 250px;
+  height: auto;
+  margin: 0 auto 40px;
+  box-shadow: 0 0 50px #fff;
+}
+
+.about p{
+  line-height: 1.9;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* --------------------------------
+ *     works
+ * -------------------------------- */
+
+ .works{
+   padding: 80px 5%;
+   background-color: #e5e5e5;
+   color: #46526b;
+ }
+
+ .works .heading{
+   margin-bottom: 50px;
+ }
+
+ .works .heading::before,
+ .works .heading::after{
+   background-color: #46526b;
+ }
+
+ .work-box{
+   max-width: 800px;
+   margin: 0 auto;
+   background-color: #fff;
+   padding: 26px;
+
+   margin-bottom: 30px;
+ }
+
+ .work-title{
+   font-weight: bold;
+   padding-left: 12px;
+   border-left: 6px solid #7fc7ff;
+   font-size: 2.2rem;
+   margin-bottom: 30px;
+ }
+
+ .work-title a{
+   color: #46526b;
+ }
+
+ .work-title a:hover{
+   text-decoration: underline;
+ }
+
+ .work-inner{
+   display: flex;
+ }
+
+ .work-img a{
+   transition: 0.5s;
+ }
+
+ .work-img a:hover{
+   opacity: 0.6;
+ }
+
+ .work-img{
+   width: 45%;
+   margin-right: 30px;
+   text-align: center;
+ }
+
+ .work-img img{
+   box-shadow: 0 0 12px #ccc;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .work-text{
+   width: 55%;
+ }
+
+.work-text p{
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.work-text a{
+  margin-left: 8px;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.work-text a:hover{
+  text-decoration: underline;
+  background-color: #e5e5e5;
+}
+
+.work-text span{
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 3px;
+  background-color: #73b7ec;
+}
+
+.alex-icon{
+  width: 150px;
+}
+
+/* --------------------------------
+ *     footer
+ * -------------------------------- */
+
+footer{
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+
+/* --------------------------------
+ * --------------------------------
+ *     レスポンシブ用CSS
+ * --------------------------------
+ * -------------------------------- */
+
+ @media (max-width: 768px){
+   .heading{
+     font-size: 3rem;
+   }
+   .heading::before,
+   .heading::after{
+     width: 10px;
+     height: 17px;
+     margin: 0 21px;
+   }
+   .header{
+     /* height: 480px; */
+   }
+   .header img{
+     padding-top: 260px;
+   }
+   .header span{
+     font-size: 2.4rem;
+   }
+   .about img{
+     width: 37%;
+   }
+   .about p{
+     font-size: 1.4rem;
+     line-height: 1.6;
+   }
+   .work-box{
+     padding: 26px 5%;
+   }
+   .work-title{
+     font-size: 2rem;
+   }
+   .work-inner{
+     flex-direction: column;
+   }
+   .work-img{
+     width: 70%;
+     margin: 0 auto 22px;
+   }
+   .work-text{
+     width: 100%;
+   }
+   .work-title a:active{
+     text-decoration: underline;
+   }
+   .work-img a:active{
+     opacity: 0.6;
+   }
+  .work-text a:active{
+    text-decoration: underline;
+    background-color: #e5e5e5;
+  }
+
+
+}
