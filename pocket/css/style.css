@@ -171,7 +171,7 @@ ul, li{
 
 .f-btn{
   position: fixed;
-  z-index: 30;
+  z-index: 999;
   top: 10px;
   right: 100px;
   width: 70px;
@@ -184,7 +184,7 @@ ul, li{
 
 .m-btn{
   position: fixed;
-  z-index: 30;
+  z-index: 999;
   top: 10px;
   right: 20px;
   width: 70px;
@@ -252,7 +252,7 @@ ul, li{
   bottom: 0;
   left: 0;
   background-color: #FFEE7D;
-  z-index: 999;
+  z-index: 900;
   display: flex;
   justify-content: center;
   align-items: center;
