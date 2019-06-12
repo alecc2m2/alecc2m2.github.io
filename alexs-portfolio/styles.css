@@ -17,6 +17,7 @@ body{
   font-size: 1.6rem;
   color: #333;
   font-family: system-ui, "Helvetica Neue", "Hiragino Kaku Gothic ProN", YuGothic, "Yu Gothic", Verdana, Meiryo, sans-serif;
+  background-color: #8D8884;
 }
 
 *, *::before, *::after{
@@ -261,13 +262,15 @@ footer{
      height: 17px;
      margin: 0 21px;
    }
-   .header{
-     /* height: 480px; */
+   header{
+     background-image: url("img/header-bg-sp.png");
    }
-   .header img{
-     padding-top: 260px;
+   .header-title{
+     padding-top: 35vh;
+     /* padding-top: 260px; */
+     text-align: center;
    }
-   .header span{
+   header span{
      font-size: 2.4rem;
    }
    .about img{
