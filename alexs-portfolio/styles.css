@@ -70,7 +70,7 @@ a, a:link, a:hover, a:visited, a:active{
 header{
   background: url(img/header-bg.png) no-repeat fixed center center;
   background-size: cover;
-  height: 790px;
+  height: 100vh;
   /* text-align: center; */
   position: relative;
   padding: 0 40px;
