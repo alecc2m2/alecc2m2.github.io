@@ -1,0 +1,440 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * --------------------------------
+ *    レスポンシブ用CSS
+ * --------------------------------
+ * -------------------------------- */
+
+@media (max-width:1200px){
+
+  /* ---- header ---- */
+  .header-dog1{
+    width: 15.4%;
+  }
+  .header-dog2{
+    width: 17%;
+  }
+  .header-dog3{
+    width: 25.4%;
+  }
+  .header-dog4{
+    width: 21.2%;
+  }
+}
+
+@media (max-width:768px){
+
+  /* ---- header ---- */
+  .header-dog1{
+    top: 28%;
+    left: auto;
+    right: 7%;
+  }
+  .header-dog2{
+    top: 23%;
+    right: auto;
+    left: 5%;
+  }
+  .header-dog3{
+    display: none;
+  }
+  .header-dog4{
+    left: auto;
+    right: 7%;
+  }
+
+  /* ---- concept ---- */
+  .concept-dog1{
+    width: 150px;
+    top: 130px;
+    left: 0;
+  }
+  .concept-dog2{
+    width: 280px;
+    top: 480px;
+    right: 0;
+  }
+  .swiper-container{
+    margin: 30px auto 0;
+  }
+  .swiper-slide img{
+    max-width: 100%;
+  }
+
+  /* ---- service1 ---- */
+  .service-img2{
+    top: 40%;
+  }
+  .service-img3{
+    left: auto;
+    right: 80%;
+  }
+  .service1-wrapper .service-box:nth-of-type(1){
+    width: 206px;
+    height: 206px;
+    top: 1%;
+    right: 8%;
+  }
+  .service1-wrapper .service-box:nth-of-type(2){
+    width: 278px;
+    height: 278px;
+    top: 29%;
+    left: auto;
+    right: 17%;
+  }
+  .service1-wrapper .service-box:nth-of-type(3){
+    width: 246px;
+    height: 246px;
+    top: 69%;
+    right: 12%;
+  }
+  .service-text{
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  /* ---- service2 ---- */
+  .service2-wrapper .service-box:nth-of-type(1){
+    width: 278px;
+    height: 278px;
+    left: 0;
+  }
+  .service2-wrapper .service-box:nth-of-type(2){
+    width: 206px;
+    height: 206px;
+    top: 42%;
+    left: 65%;
+  }
+  .service2-wrapper .service-box:nth-of-type(3){
+    width: 246px;
+    height: 246px;
+    top: 80%;
+    left: 25%;
+  }
+
+  /* ---- use ---- */
+  .use-wrapper{
+    font-size: 1.3rem;
+  }
+  .prepare-desc dd p{
+    font-size: 1.1rem;
+  }
+
+  /* ---- faq ---- */
+  .question h5{
+    font-size: 1.4rem;
+  }
+  .answer{
+    font-size: 1.3rem;
+  }
+
+  /* ---- price ---- */
+  .tab_item{
+    font-size: 1.3rem;
+  }
+  thead th{
+    font-size: 1.4rem;
+  }
+  tbody th{
+    font-size: 1.7rem;
+  }
+  tbody td{
+    font-size: 1.4rem;
+  }
+  #hotel:checked ~ #hotel_content,
+  #senior:checked ~ #senior_content,
+  #sitter:checked ~ #sitter_content,
+  #care:checked ~ #care_content {
+    padding: 35px 5% 0;
+  }
+
+  /* ---- about ---- */
+  .about-desc{
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  /* ---- footer ---- */
+  .access{
+    padding: 50px 5% 30px;
+  }
+  .access-text{
+    font-size: 1.3rem;
+  }
+  .map{
+    width: 45%;
+  }
+
+}
+
+
+@media (max-width:640px){
+
+  /* ---- 共通部分 ---- */
+  .section-title{
+    padding: 20px 0;
+  }
+  .section-title img{
+    height: 22px;
+  }
+
+  /* ---- header ---- */
+  header{
+    background-image: none;
+    height: 100vh;
+    padding-top: 34vh;
+  }
+  .header-lead{
+    width: 300px;
+  }
+  .logo-wrapper{
+    background-size: 250px;
+    width: 250px;
+    height: 200px;
+    padding: 0;
+  }
+  .header-logo1{
+    width: 230px;
+    padding-top: 75px;
+  }
+  .header-logo2{
+    width: 220px;
+  }
+  .header-text{
+    display: none;
+  }
+  .header-dog1, .header-dog2, .header-dog4{
+    display: none;
+  }
+
+  /* ---- concept ---- */
+  .concept{
+    padding: 60px 5%;
+  }
+  .concept-inner{
+    background-image: none;
+    padding-top: 0px;
+    height: auto;
+  }
+  .concept-inner p{
+    font-size: 1.4rem;
+  }
+  .sp-br{
+    display: none;
+  }
+  .concept-dog1{
+    position: static;
+    width: 120px;
+  }
+  .concept-dog2{
+    position: static;
+    width: 220px;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  /* ---- service1 ---- */
+  .service1-wrapper{
+    display: block;
+  }
+  .service1-left{
+    width: 100%;
+  }
+  .service-img1{
+    position: static;
+  }
+  .service1-right{
+    width: 100%;
+    height: auto;
+    position: static;
+    text-align: left;
+  }
+  .service-box{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px dotted #F18D00;
+    position: static;
+    display: block;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+  .service1-wrapper .service-box:nth-of-type(1),
+  .service1-wrapper .service-box:nth-of-type(2),
+  .service1-wrapper .service-box:nth-of-type(3){
+    width: 100%;
+    height: auto;
+  }
+  .service-text br{
+    display: none;
+  }
+  .service-img3{
+    position: static;
+    width: 170px;
+  }
+
+  /* ---- service2 ---- */
+  .service2{
+    padding: 60px 3% 40px;
+  }
+  .service2-wrapper{
+    display: block;
+  }
+  .service2-right{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .service2-left{
+    width: 100%;
+    text-align: left;
+    padding-top: 30px;
+  }
+  .service2-wrapper .service-box:nth-of-type(1),
+  .service2-wrapper .service-box:nth-of-type(2),
+  .service2-wrapper .service-box:nth-of-type(3){
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---- use ---- */
+  .use-wrapper{
+    padding: 30px 20px 60px;
+    margin-top: 0;
+  }
+  .prepare-desc dd{
+    width: 50%;
+  }
+  .use-list{
+    text-align: center;
+  }
+  .use-item{
+    padding: 53px 0 40px;
+    background-position: center top;
+    margin-top: 30px;
+  }
+  .use-item:nth-of-type(6){
+    text-align: left;
+  }
+  .use-flex br{
+    display: none;
+  }
+  .use-flex .left{
+    text-align: right;
+    padding-right: 5px;
+  }
+  .use-flex .right{
+    text-align: left;
+  }
+  .use-button{
+    width: 100%;
+  }
+  .use-button br{
+    display: block;
+  }
+
+  /* ---- faq ---- */
+  .faq{
+    padding: 80px 0;
+  }
+  .faq-list{
+    padding: 10px 0 0;
+  }
+  .faq-bottom{
+    font-size: 1.2rem;
+  }
+
+  /* ---- price ---- */
+  .price{
+    padding: 0 0 150px;
+  }
+  .tabs{
+    padding-bottom: 20px;
+    margin: -10px auto 0;
+  }
+  .tab_content_title{
+    padding-bottom: 0;
+    font-size: 1.6rem;
+  }
+  tbody br{
+    display: block;
+  }
+  thead th{
+    font-size: 1.1rem;
+  }
+  tbody th{
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  tbody td{
+    padding: 0 0 0 8px;
+    line-height: 1.4;
+  }
+  #sitter_content th,
+  #sitter_content td,
+  #care_content th,
+  #care_content td{
+    line-height: 1;
+  }
+  #sitter_content thead th,
+  #care_content thead th{
+    line-height: 1;
+    padding: 2px 0;
+  }
+  #hotel:checked ~ #hotel_content,
+  #senior:checked ~ #senior_content,
+  #sitter:checked ~ #sitter_content,
+  #care:checked ~ #care_content {
+    padding: 20px 5% 0;
+  }
+
+  /* ---- contact ---- */
+  .contact{
+    padding: 5px 3% 10px;
+  }
+  .contact-buttons{
+    display: block;
+    margin: -10px auto 0;
+  }
+  .contact-button{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact-button p{
+    font-size: 1.3rem;
+    padding-bottom: 0;
+  }
+
+  /* ---- about ---- */
+  .about{
+    padding: 80px 5% 120px;
+  }
+  .about-text{
+    margin: -15px auto 0;
+  }
+
+  /* ---- footer ---- */
+  .access{
+    padding: 40px 5% 40px;
+  }
+  .access-wrapper{
+    display: block;
+  }
+  .access-text{
+    line-height: 1.6;
+  }
+  .open-time{
+    line-height: 1.6;
+  }
+  .map{
+    width: 100%;
+  }
+  .map a{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
+    position: static;
+    margin-top: 20px;
+  }
+}
