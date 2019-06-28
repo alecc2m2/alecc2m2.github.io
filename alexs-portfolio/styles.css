@@ -17,7 +17,6 @@ body{
   font-size: 1.6rem;
   color: #333;
   font-family: system-ui, "Helvetica Neue", "Hiragino Kaku Gothic ProN", YuGothic, "Yu Gothic", Verdana, Meiryo, sans-serif;
-  background-color: #8D8884;
 }
 
 *, *::before, *::after{
@@ -71,14 +70,14 @@ a, a:link, a:hover, a:visited, a:active{
 header{
   background: url(img/header-bg.png) no-repeat fixed center center;
   background-size: cover;
-  height: 100vh;
+  height: 790px;
   /* text-align: center; */
   position: relative;
   padding: 0 40px;
 }
 
 .header-title{
-  padding-top: 32vh;
+  padding-top: 220px;
   text-align: center;
 }
 
@@ -154,7 +153,6 @@ header span{
    margin: 0 auto;
    background-color: #fff;
    padding: 26px;
-
    margin-bottom: 30px;
  }
 
@@ -243,7 +241,6 @@ footer{
   text-align: center;
   padding: 20px;
   font-size: 1.2rem;
-  background-color: #fff;
 }
 
 
@@ -263,11 +260,13 @@ footer{
      height: 17px;
      margin: 0 21px;
    }
-   header{
-     background-image: url(img/header-bg-sp.png);
-     background-attachment: scroll;
+   .header{
+     /* height: 480px; */
    }
-   header span{
+   .header img{
+     padding-top: 260px;
+   }
+   .header span{
      font-size: 2.4rem;
    }
    .about img{
@@ -293,15 +292,20 @@ footer{
    .work-text{
      width: 100%;
    }
+   .work-title a{
+     text-decoration: underline;
+   }
    .work-title a:active{
      text-decoration: underline;
    }
    .work-img a:active{
      opacity: 0.6;
    }
-  .work-text a:active{
-    text-decoration: underline;
-    background-color: #e5e5e5;
+   .work-text a{
+     text-decoration: underline;
+   }
+   .work-text a:active{
+     background-color: #e5e5e5;
   }
 
 
