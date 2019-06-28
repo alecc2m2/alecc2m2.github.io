@@ -89,7 +89,7 @@ header{
 
 header span{
   font-family: 'Rock Salt', cursive;
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   color: #ddd;
   letter-spacing: 4px;
   position: absolute;
@@ -261,8 +261,8 @@ footer{
      margin: 0 21px;
    }
    header {
-       background-image: url(img/header-bg-sp.png);
-       background-attachment: scroll;
+     background-image: url(img/header-bg-sp.png);
+     background-attachment: scroll;
    }
    header img{
      padding-top: 260px;
