@@ -70,7 +70,7 @@ a, a:link, a:hover, a:visited, a:active{
 header{
   background: url(img/header-bg.png) no-repeat fixed center center;
   background-size: cover;
-  height: 790px;
+  height: 100vh;
   /* text-align: center; */
   position: relative;
   padding: 0 40px;
@@ -260,13 +260,14 @@ footer{
      height: 17px;
      margin: 0 21px;
    }
-   .header{
-     /* height: 480px; */
+   header {
+       background-image: url(img/header-bg-sp.png);
+       background-attachment: scroll;
    }
-   .header img{
+   header img{
      padding-top: 260px;
    }
-   .header span{
+   header span{
      font-size: 2.4rem;
    }
    .about img{
