@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -17,9 +18,16 @@
         <h1 class="site-title">ALEX'S PORTFOLIO</h1>
         <p class="site-subtitle">- thank you for visiting -</p>
       </div>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#profile">Profile</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="about">
+    <section id="about">
       <h2 class="heading">ABOUT</h2>
       <img src="img/selfphoto.jpg" alt="アレックの写真">
       <p>『ALEX'S PORTFOLIO』へようこそ！<br>当サイトの運営者、イタリア系日本人のアレックです。</p>
@@ -27,7 +35,7 @@
       <p>いままで制作してきた作品を紹介いたしますので、ご覧いただけると幸いです。<br>よろしくお願いいたします。</p>
     </section>
 
-    <section class="works">
+    <section id="works">
       <h2 class="heading">WORKS</h2>
       <div class="work-box">
         <h3 class="work-title"><a href="https://alecc2m2.github.io/laumelia-cafe/" target="_blank">模写制作1（LAUMELIA CAFE）</a></h3>
@@ -80,12 +88,25 @@
           </div>
         </div>
       </div>
+      <div class="work-box">
+        <h3 class="work-title"><a href="#header">ALEX'S PORTFOLIO</a></h3>
+        <div class="work-inner">
+          <div class="work-img">
+            <a href="#header"><img src="img/work-img-p.png" alt="ALEX's Portfolio"></a>
+          </div>
+          <div class="work-text">
+            <p>当ポートフォリオサイトです。トップ画像におけるタイトル部分（WELCOME TO MY PORTFOLIO）は、Photoshopを使って、図形を文字型に中抜きすることで作成しました。レスポンシブにも対応しています。<a href="#header">詳しく見る≫</a></p>
+            <span>HTML & CSS</span>
+            <span>Photoshop</span>
+          </div>
+        </div>
+      </div>
       <div class="work-box empty">
           現在製作中
       </div>
     </section>
 
-    <section class="profile">
+    <section id="profile">
       <div class="container">
         <h2>Profile</h2>
         <div class="profile-box">
@@ -94,13 +115,20 @@
           </div>
           <div class="profile-text">
             <h3>アレック</h3>
-            <p>奈良県出身。父イタリア人、母日本人。</p><p>大阪市立大学工学部卒業後、大阪市役所建設局に勤務 → 精神面を崩し退職。以後2年程病む。</p><p>起死回生を図り、フジテレビ「あいのり」に応募 → 合格 → 出演 → 調子に乗る。<br>奈良から上京、芸能事務所に所属 → 低収入生活によって精神面を崩し退所。<br>以後、派遣社員として倉庫業に従事。</p><p>働く傍ら、やりたかったことや興味があったことに挑戦しまくる。<br>（プロレス生観戦しまくる、プロレス検定受験 → 1級合格、プロレスブログ運営、高IQ団体・MENSA受験 → 合格、テレビのものまね歌合戦出演、スーパーマリオのハイスピードクリア世界記録挑戦 → 5分16秒が世界第8位に正式認定、高橋名人との2ショット撮影に成功、あとは美味しいケーキを食べる、かわいい女と付き合う等）</p><p>やりたいことをやり尽くし目標を失ったところでプログラミングに出会い勉強。楽しい。今に至る。</p>
+            <p>奈良県出身。父イタリア人、母日本人。</p>
+            <p>大阪市立大学工学部卒業後、大阪市役所建設局に勤務 → 精神面を崩し退職。以後2年程病む。</p>
+            <p>起死回生を図り、フジテレビ「あいのり」に応募 → 合格 → 出演 → 調子に乗る。<br>奈良から上京、芸能事務所に所属 → 低収入生活が無理すぎて退所。<br>以後、派遣社員として倉庫業に従事。</p>
+            <p>働く傍ら、やりたかったことや興味があったことに挑戦しまくる。<br>（プロレス生観戦しまくる、プロレス検定受験 → 1級合格、プロレスブログ運営、高IQ団体「MENSA」受験 → 合格、テレビのものまね歌合戦出演、スーパーマリオのハイスピードクリア世界記録挑戦 → 5分16秒が世界第8位に正式認定、高橋名人と2ショット撮影、あとは美味しいケーキを食べる、かわいい女と付き合う等）</p>
+            <p>やりたいことをやり尽くし目標を失ったところでプログラミングに出会いMacBook買って勉強。楽しい。今に至る。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>© 2019 ALEX's Portfolio</footer>
+    <footer>© 2019 ALEX'S PORTFOLIO</footer>
 
+    <img src="img/pagetop.png" class="pagetop" alt="TOPへ">
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
