@@ -18,12 +18,16 @@
    height: 22px;
    margin: 0 21px;
  }
+ .pagetop{
+   right: 15px;
+   bottom: 15px;
+ }
 
  /* ---- header ---- */
  header {
    background-image: url(../img/header-bg-sp.png);
    background-attachment: scroll;
-   padding: 24vh 0 0;
+   padding: 22vh 0 0;
  }
  .title-belt{
    padding: 31px 0 13px;
@@ -39,12 +43,19 @@
    width: 40px;
    margin-bottom: 8vh;
  }
+ .header-nav{
+   margin: 8vh auto 0;
+   font-size: 1.5rem;
+ }
+ .header-nav li a{
+   padding: 4px 12px;
+ }
 
  /* ---- about ---- */
- .about img{
+ #about img{
    width: 37%;
  }
- .about p{
+ #about p{
    font-size: 1.4rem;
    line-height: 1.6;
  }
