@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * --------------------------------
+ *     レスポンシブ用CSS
+ * --------------------------------
+ * -------------------------------- */
+
+@media (max-width: 768px){
+
+/* ---- part ---- */
+ .heading{
+   font-size: 3.2rem;
+ }
+ .heading::before,
+ .heading::after{
+   width: 10px;
+   height: 22px;
+   margin: 0 21px;
+ }
+
+ /* ---- header ---- */
+ header {
+   background-image: url(../img/header-bg-sp.png);
+   background-attachment: scroll;
+   padding: 24vh 0 0;
+ }
+ .title-belt{
+   padding: 31px 0 13px;
+ }
+ .site-title{
+   font-size: 4.5rem;
+   letter-spacing: 2px;
+ }
+ .site-subtitle{
+   font-size: 2rem;
+ }
+ header .alex-icon{
+   width: 40px;
+   margin-bottom: 8vh;
+ }
+
+ /* ---- about ---- */
+ .about img{
+   width: 37%;
+ }
+ .about p{
+   font-size: 1.4rem;
+   line-height: 1.6;
+ }
+
+ /* ---- works ---- */
+ .work-box{
+   padding: 26px 5%;
+ }
+ .work-title{
+   font-size: 2rem;
+ }
+ .work-inner{
+   flex-direction: column;
+ }
+ .work-img{
+   width: 70%;
+   margin: 0 auto 22px;
+ }
+ .work-text{
+   width: 100%;
+ }
+ .work-title a{
+   text-decoration: underline;
+ }
+ .work-title a:active{
+   text-decoration: underline;
+ }
+ .work-img a:active{
+   opacity: 0.6;
+ }
+ .work-text a{
+   text-decoration: underline;
+ }
+ .work-text a:active{
+   background-color: #e5e5e5;
+ }
+
+ /* ---- profile ---- */
+ .profile-img{
+   width: 40%;
+   margin: 0 auto;
+ }
+ .profile-box{
+   display: block;
+   margin-top: 30px;
+ }
+ .profile-text{
+   width: 100%;
+   margin: 35px auto 0;
+   padding-left: 0;
+ }
+ .profile-text h3{
+   text-align: center;
+ }
+
+
+
+}
